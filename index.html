@@ -4,8 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hello</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+    <style>
+        #canvas{
+            width: 500px;
+            height: 400px;
+            border: 1px solid black;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        .available span{
+            background-color: green;
+        }
+        span{
+            margin-top: 100px;
+            background-color: red;
+            padding: 10px;
+            color: black;
+        }
+    </style>
+
 </head>
 <body>
-    <h1>Hello brother</h1>
+    <div id="main-id">
+        <!-- <h2>{{greet()}}</h2>
+        <h1>{{name}}</h1>
+        <h1>{{job}}</h1> -->
+
+        <!-- <h1>Data Binding</h1>
+        <a :href="website">google</a>
+        <input type="text" :value="name">
+       
+        <p v-html="websiteTag"></p> -->
+
+        <!-- <h1>Events</h1>
+        <button @click="ageFunc">Adding a Age</button>
+        <button @click="ageSub">Subtract a Age</button>
+        <p>{{age}}</p> -->
+
+        <!-- Event Modifiers -->
+
+            <!-- <h1>Keyboard Events</h1>
+            <label for="name">Name</label>
+            <input type="text" name="name" @keyup.enter="logName">
+
+            <label for="age">Age</label>
+            <input type="age" name="age" @keyup.alt.enter="ageLog"> -->
+
+     <!-- Data & Methods in Vue -->
+        <!-- <h1>{{greet('afternoon')}}</h1> -->
+        
+    <!-- Data Binding -->
+
+    <!-- <p>Data Binding</p>
+    <a :href="website">google</a>
+    <h1 v-html="websiteTag"></h1> -->
+
+    <!-- Events -->
+    <!-- <p>Events</p>
+    <button @click="add(1)">Add++</button>
+    <button @click="subtract(1)">subtract--</button>
+    <button @dblclick="add(10)">Add 10</button>
+    <button @dblclick="subtract(10)">subtract 10</button>
+    <p>{{age}}</p>
+
+    <p @mousemove="offset" id="canvas">{{x}}, {{y}}</p> -->
+
+    <!-- Events Modifier -->
+    <!-- <button @click.once="addToA">Add to A</button>
+    <button @click="addToB">Add to B</button>
+    <h1> Add to {{age}}</h1> -->
+
+    <!-- computed properties -->
+        <!-- <h1>Computed Properties</h1>
+        <button @click="a++">Add to A</button>
+        <button @click="b++">Add to B</button>
+
+        <h1>A - {{a}}</h1>
+        <h1>B - {{b}}</h1>
+
+        <h1>Age + A = {{addToA}}</h1>
+        <h1>Age + B = {{addToB}}</h1> -->
+
+        <!-- Dynamic Classes in Vue -->
+        <!-- <h1>Example 1</h1>
+        <button @click="available = !available">Toggle</button>
+        
+        <div :class="multipleClasses">
+            <span>Color</span>
+        </div> -->
+
+        <!-- conditional -->
+
+        <!-- <button @click="isError = !isError">Errro Button</button>
+        <button @click="success = !success">success Button</button>
+
+        <div v-if="isError">
+            <span>There is an Error occur!</span>
+        </div>
+        <div  v-else-if="success">
+            <span>whooo, successfully</span>
+        </div> -->
+
+        <!-- v-for in vuejs -->
+
+        <!-- Example 1 -->
+        <!-- <div v-for="(character, index) in characters" ::key="index">
+            <ul>
+                <li> {{index + 1}} {{character}}</li>
+            </ul>
+        </div> -->
+        <!-- Example 2 -->
+        <!-- <div v-for="(item, index) in arrayOfObject" ::key="index">
+            <ul v-for="(value,key, ind) in item">
+                <li>{{index +1}} {{key}} {{value}}</li>
+            </ul>
+        </div> -->
+
+        
+
+
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
