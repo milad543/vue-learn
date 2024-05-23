@@ -23,7 +23,8 @@ new Vue({
             {name: 'pc-2', modle: 1999},
             {name: 'pc-3', modle: 1920},
             {name: 'pc-4', modle: 1931},
-        ]
+        ],
+        refData: '',
     },
     methods: {
         greet: function (time) {
@@ -47,6 +48,13 @@ new Vue({
             console.log("addtob");
             return this.age + this.b
         }*/
+
+        // Ref methods
+
+        readRef: function(params) {
+            this.refData = this.$refs.inputRef.value
+            console.log(this.$refs);
+        }
         
     },
     computed: {
