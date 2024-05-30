@@ -1,15 +1,17 @@
 <template>
   <div>
-    <main-vue></main-vue>
+   <punching-game/>
   </div>
 </template>
 
 <script>
-import mainVue from './components/main.vue'
+import PunchingGame from './components/punchingGame.vue'
+// import computedValueVue from './components/computedValue.vue'
 export default {
   name: 'App',
   components: {
-    'main-vue': mainVue
+    // "computed-value": computedValueVue
+    "punching-game": PunchingGame
   },
   data(){
     return {
